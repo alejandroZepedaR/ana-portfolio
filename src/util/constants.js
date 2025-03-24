@@ -68,3 +68,5 @@ export const SKILLS = [
     "Verbal and written communication",
     "Cross-cultural awareness"
 ]
+
+export const ENDPOINT = "http://localhost:3000/"

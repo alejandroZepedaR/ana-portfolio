@@ -1,16 +1,18 @@
-import { IoMdDownload } from "react-icons/io";
 import { IoSchoolOutline } from "react-icons/io5";
 import { EducationCard } from "./education-card";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { WorkHistory } from "./work-history";
 import {EDUCATION, SKILLS} from "../../util/constants";
+import {DownloadButton} from "../global/download-button";
 
 export const ResumeSection = () =>{
     return (
         <section>
             <header className="flex space-x-2 items-center">
                 <h2 className="text-2xl">Resume</h2>
-                <button className="btn btn-primary"><IoMdDownload />Download</button>
+                <DownloadButton 
+                    link={"resume/Resume.pdf"}
+                />
             </header>
             <main className="flex flex-col space-y-2">
                 <section>
