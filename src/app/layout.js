@@ -1,15 +1,7 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { MenuSideBar } from "../components/menu/menu-side";
 import "./globals.css";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -18,11 +10,21 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" data-theme="cupcake">
+      <body>
+        <div className="drawer lg:drawer-open">
+          <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+          <main className="drawer-content flex flex-col p-4">
+            <div className="flex items-center space-x-2 lg:hidden">
+              <label htmlFor="my-drawer-2" className="btn btn-circle btn-primary drawer-button  lg:hidden">
+                <GiHamburgerMenu />
+              </label>
+              <h3 className="font-bold">Ana Lopez</h3>
+            </div>
+            {children}
+          </main>
+          <MenuSideBar />
+        </div>
       </body>
     </html>
   );
