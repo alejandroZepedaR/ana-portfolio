@@ -3,6 +3,8 @@ import { IoSchoolOutline } from "react-icons/io5";
 import { EducationCard } from "./education-card";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { WorkHistory } from "./work-history";
+import {EDUCATION, SKILLS} from "../../util/constants";
+
 export const ResumeSection = () =>{
     return (
         <section>
@@ -29,18 +31,9 @@ export const ResumeSection = () =>{
                         <h3 className="text-xl">Education</h3>
                     </header>
                     <main className="flex space-x-2">
-                        <EducationCard 
-                            degree="MA International Security Studies"
-                            school="University Of Arizona"
-                            date="05/2025"
-                            description=""
-                        />
-                        <EducationCard 
-                            degree="BA Political Science: International Relations Emphasis"
-                            school="University Of Arizona"
-                            date="05/2023"
-                            description=""
-                        />
+                        {EDUCATION.map((item, index) => (
+                            <EducationCard key={index} {...item} />
+                        ))}
                     </main>
                 </section>
                 <section>
@@ -58,10 +51,9 @@ export const ResumeSection = () =>{
                     </header>
                     <main>
                         <ul className="flex flex-wrap space-x-2 space-y-2">
-                            <li className="badge badge-primary">Strong analytical and research skills</li>
-                            <li className="badge badge-primary">Interdisciplinary perspective</li>
-                            <li className="badge badge-primary">Verbal and written communication</li>
-                            <li className="badge badge-primary">Cross-cultural awareness</li>
+                           {SKILLS.map((skill, index) => (
+                                 <li key={index} className="badge badge-primary">{skill}</li>
+                           ))}
                         </ul>
                     </main>
                 </section>
@@ -69,7 +61,7 @@ export const ResumeSection = () =>{
                     <header className="flex items-center mb-2">
                         <h3 className="text-xl">Languages</h3>
                     </header>
-                    <main className="flex space-x-2">
+                    <main className="flex space-x-2 flex-wrap">
                         <div>
                             <div className="flex space-x-2">
                                 <h4>English</h4>

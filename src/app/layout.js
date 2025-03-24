@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         <div className="drawer lg:drawer-open">
           <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
           <main className="drawer-content flex flex-col p-4">
-            <div className="flex items-center space-x-2 lg:hidden">
+            <div className="flex items-center space-x-2 lg:hidden mb-1 py-2">
               <label htmlFor="my-drawer-2" className="btn btn-circle btn-primary drawer-button  lg:hidden">
                 <GiHamburgerMenu />
               </label>
