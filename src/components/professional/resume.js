@@ -8,7 +8,7 @@ import {DownloadButton} from "../global/download-button";
 export const ResumeSection = () =>{
     return (
         <section>
-            <header className="flex space-x-2 items-center">
+            <header className="flex space-x-2 mb-4 items-center">
                 <h2 className="text-2xl">Resume</h2>
                 <DownloadButton 
                     link={"resume/Resume.pdf"}
@@ -19,7 +19,7 @@ export const ResumeSection = () =>{
                     <header>
                         <h3 className="text-xl">Professional Summary</h3>
                     </header>
-                    <main>
+                    <main className="prose md:prose-lg">
                         <p>
                         Skilled benefits specialist with strong attention to detail and results-driven mindset. Adept at navigating complex
                         administrative tasks, ensuring compliance, and delivering high-quality support. Collaborative team player known

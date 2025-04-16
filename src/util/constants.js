@@ -3,14 +3,16 @@ export const EDUCATION = [
         degree: "MA International Security Studies",
         school: "University Of Arizona",
         date: "05/2025",
-        description: ""
+        description: "",
+        viewLink: "https://online.arizona.edu/programs/graduate/online-master-arts-international-security-studies-ma"
     },
     {
         degree: "BA Political Science: International Relations Emphasis",
         school: "University Of Arizona",
         date: "05/2023",
         description: "",
-        gpa: 3.9
+        gpa: 3.9,
+        viewLink: "https://sgpp.arizona.edu/ba-political-science/international-relations"
     }
 ];
 
