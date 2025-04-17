@@ -23,6 +23,11 @@ export default function AcademicOverviewPage() {
                             description="The South China Sea is vital to U.S. national security, trade, and regional stability. This essay explores evolving U.S. policies under Obama, Trump, and Biden, the strategic need to counter China’s dominance, and recommends multilateral, diplomatic, and military actions."
                             link="/samples/writing-sample-2-SCS.pdf"
                         />
+                        <SampleCard 
+                            title="Shifting Tides"
+                            description="Russia’s invasion of Ukraine sparked a major shift in European defense, with the EU enhancing integration and investment in military capabilities. Poland, once skeptical, now leads in defense spending and EU collaboration, positioning itself as a key force in shaping Europe’s security future."
+                            link="/samples/writing-sample-3-Poland.pdf"
+                        />
                     </main>
                 </section>
                 <section>
